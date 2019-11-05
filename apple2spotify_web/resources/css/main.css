@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Monrserrat:800', sans-serif;
+    font-weight: light;
+    font-size: 45px;
+    line-height: 10px;
+    color: white;
+  }
+  
+  body {
+    font-family: 'Raleway:300', sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 16px;
+    padding: 240px 20px;
+    width: 650px;
+  }
+
+  img {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+  }
+  
+  body {
+    background-color: #FFD24B;
+  }
