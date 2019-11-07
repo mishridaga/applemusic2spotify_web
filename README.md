@@ -5,3 +5,5 @@ To Do:
   1. Convert to a react based web page instead of raw html, css, js 
   2. Figure out how to deal with resizing page
   3. Learn how to create a mobile version of page
+  
+ ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
