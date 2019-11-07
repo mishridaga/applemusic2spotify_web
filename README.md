@@ -6,4 +6,4 @@ To Do:
   2. Figure out how to deal with resizing page
   3. Learn how to create a mobile version of page
   
- ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+ ![Image of website](/apple2spotify_web/webpage.png)
