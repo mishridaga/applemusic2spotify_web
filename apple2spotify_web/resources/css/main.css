@@ -1,26 +1,78 @@
-h1 {
+/* h1 {
     font-family: 'Monrserrat:800', sans-serif;
     font-weight: light;
-    font-size: 45px;
-    line-height: 10px;
+    font-size: 50px;
+    line-height: 30px;
     color: white;
-  }
-  
+    margin-bottom : 20px;
+  } */
+
   body {
-    font-family: 'Raleway:300', sans-serif;
+    /* font-family: 'Raleway:300', sans-serif;
     font-weight: lighter;
     color: white;
     font-size: 16px;
-    padding: 240px 20px;
-    width: 650px;
+    line-height: 16px; */
+    /* padding: 190px 20px;
+    width: 650px; */
+    margin-bottom : 0px;
+    vertical-align: bottom;  
   }
+
+  .container{
+    height:100%;
+    display:table;
+    width: 100%;
+    padding: 150px;
+  }
+
+  .tooltip-inner {
+    max-width: 50% !important;
+    text-align: justify;
+  }
+
+  .container {
+    vertical-align: bottom; 
+  }
+
 
   img {
     position: absolute;
-    top: 140px;
-    right: 20px;
+    top: -350px;
+    right: -170px;
+    max-width: 140%;
+    max-height: 140%;
   }
-  
-  body {
-    background-color: #FFD24B;
+
+  #outer
+  {
+      width:100%;
+      text-align: center;
   }
+  .inner
+  {
+      display: inline-block;
+  }
+
+  input[type="file"] {
+    line-height: 10px;
+  }
+
+  .col-xs-2 {
+    position: absolute;
+    left : -14px
+  }
+
+  @media only screen and (max-width: 1026px) {
+    #image {
+        display: none !important;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
+    #image {
+        display: none !important;
+    }
+}
+
+  html, body {margin: 0; height: 100%; overflow: hidden}

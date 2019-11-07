@@ -3,21 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>playlist conversion</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+	<link href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css" rel="stylesheet" />
   </head>
-  <body>
-	  <h1>apple music to spotify</h1>
-	  <p>convert an apple music playlist to one in your own spotify account by uploading a file below and clicking convert</p>
-	  <img src="resources/images/drums.png" alt="drums" width="615" height="425">
-	  <form id="my_form">
-		<label>Filename</label>
-		<input type="text" name="txtFile" id = "txtFile"/>
-		<label>PlaylistName</label>
-		<input type="text" name="playlistName" id = "playlistName"/>
-		<input type="submit" name="submit" value="Submit Form" />
-	</form>
+  <body class="container" style="background-color:#2367e5">
+		<h1 class = "text-white"> apple music to spotify </h1>
+		<h5 class = "text-white">transfer a playlist from Apple Music to your Spotify account in three simple steps:</h5>
+		
+		<p class = "text-white">1. log in to your spotify account</p>
+		<button type="button" class="btn btn-light btn-sm" id ="authorize">log in</button> 
+		<br>
+		
+		<p class = "text-white" > 2. <a href="#" data-toggle="tooltip" data-placement="top" title="to export your Apple Music playlist, nagivate to the playlist in apple music and then follow file->library->export playlist, using plaintext as the file type"> export </a> the playlist from apple music  </p>
+
+		<p class = "text-white" >3. name your new playlist and upload the exported .txt file </p>
+
+		<form id="my_form" style="margin: 0; padding: 0;">
+				<div class="col-xs-2">
+					<input type="text" class="form-control" name="playlistName" id = "playlistName" placeholder="playlist name" required >
+				</div>
+				<div style="height:10px;font-size:1px;">&nbsp;</div>
+				<div class="form-group">
+					<div class="custom-file">
+						<input type="file" class="custom-file-input" name="txtFile" id = "txtFile" accept = ".txt" required>
+					</div>
+				</div> 
+			<div style="height:15px;font-size:1px;">&nbsp;</div>
+			<button type="submit" class="btn btn-success btn-sm" id = "convert" value = "convert"> convert! </button>
+			<div class="spinner-border"></div>
+		</form>
+		<div class="clearfix content-heading">
+			<img class="pull-left" src="resources/images/electric.png" id = "image"/>
+		</div>
+	<!-- <img src="resources/images/electric.png" alt="drums"> -->
   </body>
-  	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   	<script src="resources/js/app.js"></script>
   
 </html>
